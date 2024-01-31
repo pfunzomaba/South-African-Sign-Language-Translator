@@ -18,7 +18,7 @@ classifier = Classifier("newModel/keras_model.h5", "newModel/labels.txt")
 # Define the text to be displayed and its properties
 quit_message = "When done with your conversation Press 'q' to close the window"
 message_position = (20, 40)
-text_position = (30, 100)  # Adjusted position for displaying text_to_display
+text_position = (30, 100)  # position for displaying text_to_display
 font_scale = 0.5
 font_color = (0, 0, 0)
 font_thickness = 1
