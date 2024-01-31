@@ -19,7 +19,7 @@ offset = 20
 imgSize = 300
 
 # represents the folder where captured images will be saved.
-folder = "newData/E"
+folder = "Data/A"
 # It's initialized to 0 and will be used to keep track of the number of captured images.
 counter = 0
 
@@ -63,13 +63,6 @@ while True:
             hGap = math.ceil((imgSize - hCal) / 2)
             imgWhite[hGap:hCal + hGap, :] = imgResize
 
-        # performs image processing on the detected hand and places it in a new image with a white background.
-        # Depending on the aspect ratio of the hand's bounding box,
-        # it either resizes the width or the height of the hand to fit it into the imgSize square.
-        # display two windows showing the cropped hand (imgCrop) and the processed image with a
-        # white background (imgWhite).
-        #cv2.imshow("ImageCrop", imgCrop)
-        #cv2.imshow("ImageWhite", imgWhite)
 
     # displays the original captured frame with hand landmarks drawn on it.
     cv2.imshow("Image", img)
