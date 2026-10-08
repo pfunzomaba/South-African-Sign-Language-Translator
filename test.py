@@ -7,27 +7,28 @@ import math
 
 # Initialize the webcam capture.
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FPS, 15)  # Set the frames per second
+cap.set(cv2.CAP_PROP_FPS, 15)
 
-# Create an instance of the HandDetector class with a maximum of 1 hand to be detected in each frame.
+# instance of the HandDetector class with a maximum of 1 hand to be detected in each frame.
 detector = HandDetector(maxHands=1)
 
-# Create an instance of the Classifier class and load a pre-trained model.
-classifier = Classifier("newModel/keras_model.h5", "newModel/labels.txt")
+#  load pre-trained model.
+classifier = Classifier("Model/keras_model.h5", "Model/labels.txt")
 
-# Define the text to be displayed and its properties
+
 quit_message = "When done with your conversation Press 'q' to close the window"
 message_position = (20, 40)
-text_position = (30, 100)  # position for displaying text_to_display
+text_position = (30, 100)  # Adjusted position for displaying text_to_display
 font_scale = 0.5
 font_color = (0, 0, 0)
 font_thickness = 1
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 # Define the labels for the classifier
-labels = ['A', 'B', 'C', 'D', 'E']
+labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'U', 'V', 'W',
+          'X', 'Y']
 
-# Create a full screen window
+# fullscreen window
 cv2.namedWindow("Visual Translator", cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty("Visual Translator", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
