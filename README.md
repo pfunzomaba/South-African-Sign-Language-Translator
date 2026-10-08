@@ -121,8 +121,7 @@ python test.py
 A working webcam is required.
 
 ## 📷 Demo
-
-Add screenshots or a short demonstration video/GIF here to show the translator detecting hand signs and displaying the recognised letters.
+See the screenshot folder
 
 ## 👥 Team Project
 
